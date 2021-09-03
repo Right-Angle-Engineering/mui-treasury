@@ -23,7 +23,7 @@
   },
   "homepage": "https://mui-treasury.com/components/card",
   "dependencies": {
-    "@mui-treasury/styles": "https://gitpkg.now.sh/Right-Angle-Engineering/mui-treasury/packages/mui-styles?master",
+    "@mui-treasury/styles": "https://gitpkg.now.sh/Right-Angle-Engineering/mui-treasury/packages/mui-styles?mui-v5-rc",
     "@mui-treasury/utils": "^0.4.1",
     "use-deep-compare-effect": "^1.3.0"
   },
