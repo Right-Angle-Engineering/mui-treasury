@@ -25,21 +25,9 @@
     "color": "^3.1.2"
   },
   "peerDependencies": {
-    "@material-ui/core": ">=5.0.0-alpha.37",
-    "@material-ui/styles": ">=5.0.0-alpha.35"
+    "@mui/material": ">=5.0.0-rc.0",
+    "@mui/styles": ">=5.0.0-rc.0"
   },
-  "scripts": {
-    "prebuild": "rimraf build",
-    "postpublish": "rimraf build",
-    "build": "yarn build:types || yarn build:cjs && yarn build:esm",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel-config.js --extensions \".js,.ts,.tsx\" ./src --out-dir ./build --ignore \"**/*.test.ts,**/*.spec.ts\"",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ../../babel-config.js --extensions \".js,.ts,.tsx\" ./src --out-dir ./build/esm --ignore \"**/*.test.ts,**/*.spec.ts\"",
-    "build:types": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "yarn copy-files",
-    "copy-files": "node ../../scripts/copy-files.js"
-  },
-  "gitHead": "eac20ccd043fa6daf7f1971a373fb155229281c8",
-  "devDependencies": {
-    "@types/color": "^3.0.1"
-  }
+  "private": false,
+  "main": "./index.js"
 }
